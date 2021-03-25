@@ -1,0 +1,140 @@
+/*Begin your code here*/
+/*Requirement 1*/
+body{
+  margin: 0;
+  padding: 0;
+  font-size: 16pt;
+  font-family: 'Raleway', sans-serif;
+  background-image: url('../images/concrete_seamless.png');
+}
+
+/*Requirement 2*/
+header{
+  background: #fff;
+  border-bottom: 3px solid #50C7C7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+/*Requirement 3*/
+.nav_links{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/*Requirement 4*/
+.price{
+  min-height: 500px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/*Requirement 5*/
+.package {
+  margin: 12px;
+  background: #ffffff;
+  border-radius: 7px;
+  padding: 0 0 50px 0;
+  flex-basis: 400px;
+
+}
+
+/*Requirement 6*/
+.package > header {
+  display: flex;
+  flex-direction: row;
+  background: #288080;
+  border: 2px solid #45ADAD;
+  padding: 20px 0;
+  border-radius: 7px 7px 0 0;
+}
+
+
+/*Requirement 7*/
+.gallery{
+  min-height: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/*Requirement 8*/
+.gallery > img{
+  border: 10px #50C7C7 solid;
+  margin: 10px;
+  width: 300px;
+}
+
+/*Requirement 9*/
+#logo{
+   animation-name: logo_grow;
+   animation-duration: 15s;
+}
+
+/*Keyframes for animation*/
+@-webkit-keyframes logo_grow{
+  from {width: 25px;}
+  to {width:420px}
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+
+}
+
+@keyframes logo_grow{
+  /*Your code here.*/
+
+} 
+
+@media screen and (min-width: 850px){
+
+  /*Requirement 10*/
+  header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  /*Requirement 10*/
+  .nav_links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row; 
+  }
+
+  /*Requirement 11*/
+  .package {
+    flex-basis: 250px;
+  } 
+}
+
+/*Requirement 12*/
+/*Add media query to handle reduced-motion*/
+/*Your code here again.*/ 
+
+
+
+@media print { 
+
+  /*Requirement 13*/
+  /*Requirement 14*/
+  /*Requirement 15*/
+  /*Requirement 16*/
+  /*Requirement 17*/
+  /*Requirement 18*/
+  
+  visability: hidden;
+ 
+}
+
