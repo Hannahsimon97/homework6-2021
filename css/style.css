@@ -120,26 +120,46 @@ header {
   } 
 }
 
-/*Requirement 12*/
-/*Add media query to handle reduced-motion*/
-@media (prefers-reduced-motion: reduce){
-  #logo {
+  /*Requirement 12*/
+  /*Add media query to handle reduced-motion*/
+  @media (prefers-reduced-motion: reduce){
+    #logo {
     animation: none;
   }
 }
 
 
-
-@media print { 
-
+@media print and (min-width: 1020px){ 
   /*Requirement 13*/
-  /*Requirement 14*/
-  /*Requirement 15*/
-  /*Requirement 16*/
-  /*Requirement 17*/
-  /*Requirement 18*/
-  
-  visability: hidden;
- 
-}
+  body {
+    background-image: none;
+  }
 
+  /*Requirement 14*/
+  nav {
+    max-width: 100%;
+  }
+
+  /*Requirement 15*/
+  .nav_links {
+    display: flex;
+    flex-direction: row;
+  }
+  /*Requirement 16*/
+  .price {
+    align-self: flex-end;
+  }
+  /*Requirement 17*/
+  .package {
+    border: 2px solid #45ADAD;
+    flex-basis: 200px;
+  }
+  /*Requirement 18*/
+  .gallery {
+    visibility: hidden;
+  }
+
+  #gallery {
+    visibility: hidden;
+  }
+}
