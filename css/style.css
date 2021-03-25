@@ -1,6 +1,6 @@
 /*Begin your code here*/
 /*Requirement 1*/
-body{
+body {
   margin: 0;
   padding: 0;
   font-size: 16pt;
@@ -9,8 +9,8 @@ body{
 }
 
 /*Requirement 2*/
-header{
-  background: #fff;
+header {
+  background: #ffffff;
   border-bottom: 3px solid #50C7C7;
   display: flex;
   justify-content: center;
@@ -20,7 +20,7 @@ header{
 }
 
 /*Requirement 3*/
-.nav_links{
+.nav_links {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -29,7 +29,7 @@ header{
 
 
 /*Requirement 4*/
-.price{
+.price {
   min-height: 500px;
   display: flex;
   flex-direction: row;
@@ -40,6 +40,7 @@ header{
 
 /*Requirement 5*/
 .package {
+  display: flex;  
   margin: 12px;
   background: #ffffff;
   border-radius: 7px;
@@ -60,29 +61,28 @@ header{
 
 
 /*Requirement 7*/
-.gallery{
-  min-height: 600px;
+.gallery {
   display: flex;
-  flex-direction: row;
+  min-height: 600px;
   justify-content: center;
   flex-wrap: wrap;
 }
 
 /*Requirement 8*/
-.gallery > img{
+.gallery > img {
   border: 10px #50C7C7 solid;
   margin: 10px;
   width: 300px;
 }
 
 /*Requirement 9*/
-#logo{
+#logo {
    animation-name: logo_grow;
    animation-duration: 15s;
 }
 
 /*Keyframes for animation*/
-@-webkit-keyframes logo_grow{
+@-webkit-keyframes logo_grow {
   from {width: 25px;}
   to {width:420px}
   0%   { opacity: 0; }
@@ -90,7 +90,7 @@ header{
 
 }
 
-@keyframes logo_grow{
+@keyframes logo_grow {
   /*Your code here.*/
 
 } 
